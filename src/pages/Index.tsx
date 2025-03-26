@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import ProfileImage from '@/components/ProfileImage';
 import ProfileInput from '@/components/ProfileInput';
@@ -6,7 +5,7 @@ import TokenCard from '@/components/TokenCard';
 import CryptoCard from '@/components/CryptoCard';
 import WalletButton from '@/components/WalletButton';
 import { toast } from 'sonner';
-import { Coins, Token, CreditCard, Edit2 } from 'lucide-react';
+import { Coins, CreditCard, Edit2, Ticket } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 
@@ -46,7 +45,6 @@ const Index = () => {
         
         <div className="profile-card">
           <div className="p-6 sm:p-8">
-            {/* Header with profile image and user inputs */}
             <div className="flex flex-col sm:flex-row gap-6 items-start sm:items-center mb-8">
               <ProfileImage 
                 src={profileImage} 
@@ -110,13 +108,12 @@ const Index = () => {
               </div>
             </div>
             
-            {/* Token cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
               <TokenCard 
                 label="Remaining Token" 
                 value="3,450"
                 animationDelay="0.1s"
-                icon={<Token size={18} />}
+                icon={<Ticket size={18} />}
               />
               <TokenCard 
                 label="Used Token" 
@@ -126,7 +123,6 @@ const Index = () => {
               />
             </div>
             
-            {/* Crypto balance and wallet */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
               <CryptoCard 
                 value="$2,345.00"
@@ -191,7 +187,6 @@ const Index = () => {
               </div>
             </div>
             
-            {/* Footer with wallet button */}
             <div className="flex justify-end">
               <WalletButton onClick={handleWalletOpen} />
             </div>
