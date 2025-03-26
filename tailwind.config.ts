@@ -19,6 +19,11 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				sans: ['Poppins', 'Inter', 'sans-serif'],
+				mono: ['JetBrains Mono', 'monospace'],
+				cyber: ['Share Tech Mono', 'monospace'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -62,6 +67,12 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				crypto: {
+					cyan: '#00FFFF',
+					darkBlue: '#0B1218',
+					navy: '#0F172A',
+					lightBlue: '#38B2FF',
 				}
 			},
 			borderRadius: {
